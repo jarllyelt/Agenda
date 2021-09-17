@@ -19,3 +19,6 @@ class Evento(models.Model):
         return self.titulo
     #Tratar para que o nome do evento dentro do ADMIN aparece o titulo
 
+
+    def get_data_evento(self):
+        return self.data_evento.strftime('%d/%m/%Y - %H:%M hrs')
